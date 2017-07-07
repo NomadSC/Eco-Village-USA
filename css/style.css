@@ -117,12 +117,248 @@ header {
   width:100%;
 }
 
-.navbar {border-radius: 0;}
+.navbar {
+	border: none;
+	border-radius: 0;
+}
 
 .navbar-inverse {
     z-index:1;
 }
 
+.navbar-inverse .nav li a,
+.navbar-inverse .nav li a {
+    color: #222;
+    outline: 0
+}
+
+.navbar-inverse .nav li a:hover,
+.navbar-inverse .nav li a:focus {
+    color: #08ACF9;
+    outline: 0
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+    border-radius: 5px;
+    color: #fff;
+    background-color: #173997
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #173997
+}
+
+
+/** Gallery Section **/
+
+div .gallery {
+	padding: 0;
+}
+
+
+/** Invest Section **/
+
+#invest1 {
+    background-color: black;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#invest1-hr {
+    width: 65%;
+}
+
+#invest2-title {
+    margin-top: 0px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+#invest2-strong {
+    letter-spacing: 9.5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#invest2-list {
+    margin-bottom: 0px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+}
+
+.hovereffect:hover img {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#invest2a, #invest2b, #invest2c {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#invest3 {
+    background-color: #000;
+}
+
+#invest3-img {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#invest3-content {
+    background-color: #000;
+    color: #fff;
+    padding-top: 140px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#invest3-tagline {
+    padding-bottom: 20px;
+}
+
+#invest3-content1 {
+    text-transform: uppercase;
+    letter-spacing: 9.5px;
+    padding-bottom: 20px;
+}
+
+#invest3-content2 {
+    text-transform: uppercase;
+    letter-spacing: 9.5px;
+}
+
+/********** Extra Large devices only **********/
+
+@media screen and (min-width: 1900px) {
+    #invest2-title {
+        font-size: 2em;
+        padding-top: 90px;
+        padding-left: 40px;
+    }
+    #invest2-list {
+        font-size: 1.5em;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (min-width: 1600px)and (max-width: 1899px) {
+    #invest2-title {
+        font-size: 1.5em;
+        padding-top: 90px;
+        padding-left: 40px;
+    }
+    #invest2-list {
+        font-size: 1.25em;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px)and (max-width: 1599px) {
+    #invest2-title {
+        padding-top: 80px;
+        padding-left: 40px;
+    }
+    #invest2-list {
+        padding-right: 40px;
+    }
+}
+
+
+/********** Large devices only **********/
+
+@media (min-width: 1200px)and (max-width: 1439px) {
+    #invest2-title {
+        padding-top: 60px;
+        padding-left: 40px;
+    }
+    #invest2-list {
+        padding-right: 40px;
+    }
+}
+
+
+/********** Medium devices only **********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #invest2-title {
+        margin-top: 20px;
+        padding-top: 0px;
+        padding-left: 20px;
+    }
+    #invest2-list {
+        margin-bottom: 5px;
+        padding-bottom: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #invest3-content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+
+/********** Small devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #invest2-img {
+        padding-left: 0;
+    }
+    #invest2a .hovereffect .img-responsive {
+        width: 100%;
+    }
+}
+
+
+/********** Extra small devices only **********/
+
+@media (max-width: 767px) {
+    #invest2a .hovereffect .img-responsive {
+        width: 100%;
+    }
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+
+@media (max-width: 479px) {
+    #nav-brand {
+        font-size: 10px;
+    }
+    #invest2-strong{
+     letter-spacing: 3px;   
+    }
+    #invest2-img {
+        padding-left: 0;
+    }
+    #invest2a .hovereffect .img-responsive {
+        width: 100%;
+    }
+}
 /********** Large devices only **********/
 @media (min-width: 1200px) {
     
