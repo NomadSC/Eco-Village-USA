@@ -20,7 +20,7 @@ strong {
 
 /** Navigation Bar **/
 
-.navbar {
+.navbar-default {
     background-color: #fff;
     text-transform: uppercase;
     letter-spacing: 9.5px;
@@ -28,48 +28,51 @@ strong {
     padding-bottom: 3px;
     padding-right: 30px;
     padding-left: 30px;
+	margin-bottom: 0px;
+	z-index:1;
+}
+
+.navbar-brand {
+	padding-top: 5px;
+	padding-bottom: 55px;
 }
 
 .navbar-header button {
-    background-color: #173997;
+    background-color: #fff;
+	margin-top: 15px;
 }
 
-.navbar .navbar-nav {
+.navbar-default .navbar-nav {
     display: inline-block;
     float: none;
     vertical-align: top;
 }
 
-.navbar .navbar-collapse {
+.navbar-default .navbar-collapse {
     text-align: center;
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-    color: #08ACF9;
+    color: #009345;
     outline: 0
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 5px;
     color: #fff;
-    background-color: #173997
+    background-color: #009345;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #173997
-}
-
-#nav-brand {
-    margin-top: 0;
-    color: #173997;
+    background-color: #009345;
 }
 
 .navbar-header button.navbar-toggle,
 .navbar-header .icon-bar {
-    border: 1px solid #08ACF9;
+    border: 1px solid #009345;
 }
 
 
@@ -85,6 +88,12 @@ header {
 	background-size: cover;
 	-o-background-size: cover;
 	color: #fff;
+}
+
+@media (max-width: 767px) {
+	header {
+		margin-top: 60px;
+	}  
 }
 
 .header-title {
@@ -104,6 +113,43 @@ header {
 	padding-bottom: 10px;
 }
 
+@media (min-width: 1440px) {
+   .header-img {
+		padding-top: 250px;
+	} 
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header-title {
+		font-size: 25px;
+	}
+	.header-img {
+		width: 500px;;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-img {
+		width: 450px;
+		padding-top: 100px;
+	}
+	.header-subtitle {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 767px) {
+    .header-title {
+		font-size: 15px;
+	}
+	.header-img {
+		width: 400px;
+		padding-top: 70px;
+	}
+	.header-subtitle {
+		font-size: 10px;
+	}
+}
 
 /** Sticky Navbar **/
 
@@ -117,13 +163,28 @@ header {
   width:100%;
 }
 
-.navbar {
+.navbar-inverse {
+    background-color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 9.5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 30px;
+    padding-left: 30px;
+	margin-bottom: 0px;
 	border: none;
 	border-radius: 0;
+	z-index:1;
 }
 
-.navbar-inverse {
-    z-index:1;
+.navbar-inverse .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar-inverse .navbar-collapse {
+    text-align: center;
 }
 
 .navbar-inverse .nav li a,
@@ -134,28 +195,33 @@ header {
 
 .navbar-inverse .nav li a:hover,
 .navbar-inverse .nav li a:focus {
-    color: #08ACF9;
+    color: #009345;
     outline: 0
 }
 
 .navbar-inverse .navbar-nav>.active>a {
     border-radius: 5px;
     color: #fff;
-    background-color: #173997
+    background-color: #009345
 }
 
 .navbar-inverse .navbar-nav>.active>a:hover,
 .navbar-inverse .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #173997
+    background-color: #009345
 }
 
 
 /** Gallery Section **/
 
+#gallery-section {
+	background-color: #000;
+}
+
 div .gallery {
 	padding: 0;
 }
+
 
 
 /** Invest Section **/
@@ -165,6 +231,8 @@ div .gallery {
     color: #fff;
     padding-top: 50px;
     padding-bottom: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 #invest1-hr {
@@ -231,7 +299,7 @@ ul {
 #invest3-content {
     background-color: #000;
     color: #fff;
-    padding-top: 140px;
+    padding-top: 150px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -305,7 +373,7 @@ ul {
 
 @media (min-width: 992px) and (max-width: 1199px) {
     #invest2-title {
-        margin-top: 20px;
+        margin-top: 40px;
         padding-top: 0px;
         padding-left: 20px;
     }
@@ -325,7 +393,11 @@ ul {
 /********** Small devices only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
-    #invest2-img {
+	#invest3-content {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	#invest2-img {
         padding-left: 0;
     }
     #invest2a .hovereffect .img-responsive {
@@ -337,6 +409,10 @@ ul {
 /********** Extra small devices only **********/
 
 @media (max-width: 767px) {
+	#invest3-content {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
     #invest2a .hovereffect .img-responsive {
         width: 100%;
     }
@@ -346,9 +422,6 @@ ul {
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 
 @media (max-width: 479px) {
-    #nav-brand {
-        font-size: 10px;
-    }
     #invest2-strong{
      letter-spacing: 3px;   
     }
@@ -359,6 +432,304 @@ ul {
         width: 100%;
     }
 }
+
+
+/** Volt N Bolt Section **/
+
+.volt-section {
+		background-color: #F7F7F7;
+	}
+
+@media (min-width: 769px) {
+	.volt-section {
+		background-image: url(../img/VoltNBolt%20Background-desktop.png);
+		background-repeat: none;
+		background-attachment: scroll;
+		background-position: center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		background-color: #f7f7f7;
+		width: 100%;
+		height: 600px;
+	}
+}
+
+@media (max-width: 768px) {
+	.volt-section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+#vnb-logo {
+	padding-top: 10px;
+}
+
+@media (max-width: 479px) {
+	#vnb-img {
+		padding-bottom: 20px;
+	}
+}
+
+
+/** Floor Plan Section **/
+
+.floorplan-section {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#floorplan {
+	width: 100%;
+}
+
+
+/** Forum Section **/
+
+#forum-section {
+	background-color: #f7f7f7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#leaf-logo {
+	padding-left: 20px;
+}
+
+#forum-title {
+	padding-top: 35px;
+}
+
+#forum-btn {
+    text-transform: uppercase;
+    background-color: #f7f7f7;
+    color: #000;
+    border: 1px solid #000;
+	border-radius: 0;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 9.5px;
+    display: inline-block;
+}
+
+#forum-bnt:link,
+#forum-btn:visited {
+    background-color: #f7f7f7;
+    color: #000;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#forum-btn:hover,
+#forum-btn:active {
+    background-color: #009345;
+    color: #fff;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#forum-title {
+		padding-top: 5px;
+	}
+	#forum-btn {
+		font-size: 10px;
+		letter-spacing: 5px;
+	}
+}
+
+@media (max-width: 768px) {
+	#leaf-logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 200px;
+	}
+	#forum-title {
+		text-align: center;
+		padding-top: 5px;
+	}
+	#forum-section div p {
+		text-align: center;
+	}
+	#forum-button {
+		margin-bottom: 15px;
+	}
+	#forum-btn {
+		display: block;
+		margin: auto;
+		width: 265px;
+		font-size: 10px;
+		letter-spacing: 5px;
+	}
+}
+
+@media (max-width: 320px) {
+	#forum-title {
+		font-size: 15px;
+	}
+	#forum-btn {
+		width: 200px;
+		letter-spacing: 2px;
+	}
+}
+
+
+/** Footer Section **/
+.footer-section {
+	background-color: #222;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.footer-links {
+	padding-left: 0px;	
+}
+
+.footer-links li {
+	display: inline;
+	padding-right: 15px;
+}
+
+.footer-links li a {
+	color: #fff;
+}
+
+.footer-links li a:hover {
+	color: #009345;
+	text-decoration: none;
+}
+
+.footer-title {
+	padding: 0px;
+}
+
+.footer-title h3 {
+	color: #fff;
+	margin: 0px;
+}
+
+#footer-section-icons {
+    text-align: center;
+}
+
+#facebook-icon {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#pinterest-icon {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+#twitter-icon {
+    padding-left: .5px;
+    padding-right: .5px;
+}
+
+#linkedin-icon {
+    padding-left: .5px;
+    padding-right: .5px;
+}
+
+#instagram-icon {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+#google-icon {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+#app-store {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#app-store-icon {
+	width: 15px;
+    margin-left: -1px;
+    margin-right: -1px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#footer-section-icons,
+#footer-section-icons {
+    padding-left: 0px;
+	padding-right: 0px;
+	text-align: right;
+}
+
+#footer-section-icons a:link,
+#footer-section-icons a:visited {
+    background-color: #222;
+    color: #fff;
+	border: #fff solid 1px;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#footer-section-icons a:hover,
+#footer-section-icons a:active {
+    background-color: #009345;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+	.footer-section {
+		text-align: center;
+	}
+	#footer-section-icons {
+		text-align: center;
+		padding-top: 15px;
+	}
+}
+
+@media (max-width: 479px) {
+	.social-buttons li {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	#youtube-icon, 
+	#facebook-icon, 
+	#pinterest-icon, 
+	#twitter-icon, 
+	#linkedin-icon, 
+	#instagram-icon, 
+	#google-icon {
+		font-size: 11px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	#app-store-icon {
+		width: 11px;
+	}
+}
+
+@media (max-width: 320px) {
+	.social-buttons li {
+		padding-bottom: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#facebook-icon {
+		padding-left: 1px;
+		padding-right: 1px;
+	}
+	#app-store {
+		width: 32px;
+	}
+}
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
     

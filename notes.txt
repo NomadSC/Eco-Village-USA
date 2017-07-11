@@ -1,0 +1,9 @@
+Free Forum
+http://www.freeforums.org/
+username:ecovillageusa
+password:12345asdfg
+
+Recovery Console Login: 
+Username: ecovillageusa
+Password: !I7*1Dqq
+Login url: http://rc.freeforums.org/
