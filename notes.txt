@@ -1,5 +1,5 @@
 Free Forum
-http://www.freeforums.org/
+http://ecovillageusa.freeforums.org/
 username:ecovillageusa
 password:12345asdfg
 
